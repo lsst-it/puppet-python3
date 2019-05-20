@@ -1,0 +1,29 @@
+---
+python3::old_files:
+  - '/opt/rh/rh-python36'
+  - '/var/opt/rh/rh-python36'
+  - '/etc/profile.d/python36.sh'
+python3::old_packages:
+  - 'python32*'
+  - 'python33*'
+  - 'python34*'
+  - 'python35*'
+  - 'python36u*'
+  - 'rh-python*'
+python3::packages:
+  - python
+  - python36
+  - python36-devel
+  - python36-pip
+  - boost-python
+  - boost-python-devel
+python3::symlinks:
+  '/usr/bin/python36':
+    target: '/usr/bin/python3.6'
+  '/usr/bin/python3':
+    target: '/usr/bin/python3.6'
+  '/usr/bin/pip':
+    target: '/usr/bin/pip3.6'
+  '/usr/bin/pip3':
+    target: '/usr/bin/pip3.6'
+

@@ -1,0 +1,28 @@
+---
+python3::pip_pkgs:
+  'astropy':
+  'attrs':
+    ensure: '17.4.0'
+  'ipython':
+  'lxml':
+    ensure: '4.2.1'
+  'more-itertools':
+    ensure: '4.1.0'
+  'numpy':
+  'pika':
+    ensure: '0.11.2'
+  'pluggy':
+    ensure: '0.6.0'
+  'py':
+    ensure: '1.5.3'
+  'pytest':
+    ensure: '3.5.0'
+  'PyYAML':
+    ensure: '3.12'
+  'redis':
+    ensure: '2.10.6'
+  'six':
+    ensure: '1.11.0'
+  'virtualenv':
+  'virtualenvwrapper':
+
