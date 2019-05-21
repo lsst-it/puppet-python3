@@ -40,6 +40,7 @@ class python3 (
     path    => ['/bin', '/usr/bin', '/usr/sbin',],
   }
 
-  ensure_packages($pip_packages, {'provider' => 'pip3', })
+  ensure_resources('package', lookup('python3::pip_packages'), {'provider' => 'pip3', })
+#  ensure_packages($pip_packages, {'provider' => 'pip3', })
 
 }
