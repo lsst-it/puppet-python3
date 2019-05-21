@@ -1,4 +1,10 @@
 ---
+lookup_options:
+  python3::pip_packages:  
+    merge:
+      strategy: deep
+      knockout_prefix: '-'
+
 python3::pip_packages:
   'astropy':
     ensure: installed

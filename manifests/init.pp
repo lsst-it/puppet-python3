@@ -31,7 +31,7 @@ class python3 (
 
   ensure_packages($packages, {'ensure' => 'present', })
 
-  ensure_resources('file', lookup('python3::symlinks'), {'ensure' => 'link'})
+  ensure_resources('file', $symlinks, {'ensure' => 'link'})
 
   ## LIKELY VERY SPECIFIC TO RHEL/CENTOS
   exec { 'reinstall pip binary if missing':
@@ -40,7 +40,6 @@ class python3 (
     path    => ['/bin', '/usr/bin', '/usr/sbin',],
   }
 
-  ensure_resources('package', lookup('python3::pip_packages'), {'provider' => 'pip3', })
-#  ensure_packages($pip_packages, {'provider' => 'pip3', })
+  ensure_resources('package', $pip_packages, {'provider' => 'pip3', })
 
 }
