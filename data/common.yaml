@@ -1,14 +1,14 @@
 ---
 python3::pip_packages:
-  'astropy':
+  'astropy': []
   'attrs':
     ensure: '17.4.0'
-  'ipython':
-  'lxml':
+  'ipython': []
+  'lxml': 
     ensure: '4.2.1'
   'more-itertools':
     ensure: '4.1.0'
-  'numpy':
+  'numpy': []
   'pika':
     ensure: '0.11.2'
   'pluggy':
@@ -23,6 +23,6 @@ python3::pip_packages:
     ensure: '2.10.6'
   'six':
     ensure: '1.11.0'
-  'virtualenv':
-  'virtualenvwrapper':
+  'virtualenv': []
+  'virtualenvwrapper': []
 
