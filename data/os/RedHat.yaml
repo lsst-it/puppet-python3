@@ -14,9 +14,8 @@ python3::packages:
   - python
   - python36
   - python36-devel
+  - python36-libs
   - python36-pip
-  - boost-python
-  - boost-python-devel
 python3::symlinks:
   '/usr/bin/python36':
     target: '/usr/bin/python3.6'
