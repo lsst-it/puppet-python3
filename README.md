@@ -31,6 +31,10 @@ A base set of Python packages are installed via both YUM and PIP, but can also b
 
 This module requires the EPEL YUM repository to be configured and enabled. This is not currently enforced by the module.
 
+This module requires the following puppet modules to be installed:
+
+* https://forge.puppet.com/puppetlabs/stdlib
+
 ### Beginning with python3
 
 ## Usage
