@@ -1,9 +1,56 @@
 ---
 lookup_options:
+  python:
+    merge:
+      strategy: deep
+      knockout_prefix: '-'
+  python::python_pips:
+    merge:
+      strategy: deep
+      knockout_prefix: '-'
   python3::pip_packages:  
     merge:
       strategy: deep
       knockout_prefix: '-'
+
+python:
+  'ensure: 'present'
+  'version: 'python36'
+  'pip': 'present'
+  'dev': 'present'
+  'virtualenv': 'absent'
+  'gunicorn': 'absent'
+python::python_pips:
+  'astropy':
+    ensure: installed
+  'attrs':
+    ensure: '17.4.0'
+  'ipython':
+    ensure: installed
+  'lxml':
+    ensure: '4.2.1'
+  'more-itertools':
+    ensure: '4.1.0'
+  'numpy':
+    ensure: installed
+  'pika':
+    ensure: '0.11.2'
+  'pluggy':
+    ensure: '0.6.0'
+  'py':
+    ensure: '1.5.3'
+  'pytest':
+    ensure: '3.5.0'
+  'PyYAML':
+    ensure: '3.12'
+  'redis':
+    ensure: '2.10.6'
+  'six':
+    ensure: '1.11.0'
+  'virtualenv':
+    ensure: installed
+  'virtualenvwrapper':
+    ensure: installed
 
 python3::pip_packages:
   'astropy':

@@ -13,6 +13,16 @@ class python3 (
 )
 {
 
+class { 'python' :
+  ensure     => 'present',
+  version    => 'python36',
+  use_epel   => true,
+  pip        => 'present',
+  dev        => 'present',
+  virtualenv => 'absent',
+  gunicorn   => 'absent',
+}
+
 #  $old_packages.each | Integer $index, $value |
 #  {
 #    exec { "remove misc $value packages":

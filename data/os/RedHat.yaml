@@ -1,4 +1,8 @@
 ---
+python:
+  'version: 'python36'
+  'use_epel: true
+
 python3::old_files:
   - '/opt/rh/rh-python36'
   - '/var/opt/rh/rh-python36'

@@ -35,6 +35,7 @@ This module requires the EPEL YUM repository to be configured and enabled. This 
 This module requires the following puppet modules to be installed:
 
 * https://forge.puppet.com/puppetlabs/stdlib
+* https://forge.puppet.com/puppet/python
 
 ### Beginning with python3
 
