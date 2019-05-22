@@ -20,10 +20,11 @@ The LSST Python3 module installs and configures a base working Python3 that does
 ### What python3 affects
 
 Python 3 binaries are accessible via the following paths:
-* /usr/bin/python3
-* /usr/bin/python36
-* /usr/bin/pip
-* /usr/bin/pip3
+
+* `/usr/bin/python3`
+* `/usr/bin/python36`
+* `/usr/bin/pip`
+* `/usr/bin/pip3`
 
 A base set of Python packages are installed via both YUM and PIP, but can also be expanded through hiera data.
 
