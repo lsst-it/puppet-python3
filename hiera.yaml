@@ -6,6 +6,9 @@ defaults:  # Used for any hierarchy level that omits these keys.
   data_hash: yaml_data  # Use the built-in YAML backend.
 
 hierarchy:
+  - name: "OS Release"
+    path: "os/%{facts.os.family}/%{facts.os.release.major}.%{facts.os.release.minor}.yaml"
+
   - name: "OS family"
     path: "os/%{facts.os.family}.yaml"
   
